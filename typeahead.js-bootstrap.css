@@ -26,6 +26,7 @@
 .tt-suggestion {
   display: block;
   padding: 3px 20px;
+  font-size: 14px;
 }
 
 .tt-suggestion.tt-is-under-cursor {
