@@ -1,0 +1,29 @@
+.tt-dropdown-menu {
+  min-width: 160px;
+  margin-top: 2px;
+  padding: 5px 0;
+  background-color: @dropdown-bg;
+  border: 1px solid #ccc; // IE8 fallback
+  border: 1px solid @dropdown-border;
+  border-radius: @border-radius-base;
+  .box-shadow(0 6px 12px rgba(0,0,0,.175));
+  .background-clip(padding-box);
+}
+
+.tt-suggestion {
+  display: block;
+  padding: 3px 20px;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+  color: @dropdown-link-hover-color;
+  #gradient > .vertical(@start-color: @dropdown-link-hover-bg; @end-color: darken(@dropdown-link-hover-bg, 5%));
+}
+
+.tt-suggestion.tt-is-under-cursor a {
+  color: @dropdown-bg;
+}
+
+.tt-suggestion p {
+  margin: 0;
+}
