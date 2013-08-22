@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typehead & Bootstrap</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//twitter.github.io/typeahead.js/releases/latest/typeahead.min.js"></script>
+    <link href="typeahead.js-bootstrap.css" rel="stylesheet">
+    <script type="text/javascript">
+        var data = [
+            'Salt Lake City',
+            'Provo',
+            'Ogden',
+            'Bountiful',
+            'Orem',
+            'Centerville',
+            'St. George',
+            'Cedar City',
+            'Hurricane',
+        ];
+        $(document).ready(function() {
+            $('#choose').text(data.join(', '));
+            $('#typeahead-1').typeahead({
+                name: 'normal',
+                local: data
+            });
+            $('#typeahead-2').typeahead({
+                name: 'addon',
+                local: data
+            });
+            $('#typeahead-3').typeahead({
+                name: 'pre-addon',
+                local: data
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1 class="page-header">typeahead.js and Bootstrap 3 example</h1>
+    <p>Choose from: <span id="choose"></span></p>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Normal</h2>
+            <div class="input-group col-sm-3">
+                <input type="text" class="form-control" id="typeahead-1" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Addon</h2>
+            <p>This is more complex because of CSS's inability to select a parent. add <code>input-group-appended</code> to the container div</p>
+            <div class="input-group input-group-appended col-sm-3">
+                <input type="text" class="form-control" id="typeahead-2" />
+                <span class="input-group-addon">#</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Pre-addon aka Prepend</h2>
+            <p>Prepending an input group is easier because of CSS's sibling select <code>+</code></p>
+            <div class="input-group col-sm-3">
+                <span class="input-group-addon">#</span>
+                <input type="text" class="form-control" id="typeahead-3" />
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
