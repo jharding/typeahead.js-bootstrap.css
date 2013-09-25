@@ -2,9 +2,9 @@
   min-width: 160px;
   margin-top: 2px;
   padding: 5px 0;
-  background-color: @dropdownBackground;
+  background-color: @dropdown-bg;
   border: 1px solid #ccc;
-  border: 1px solid @dropdownBorder;
+  border: 1px solid @dropdown-border;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
   .border-radius(6px);
@@ -20,12 +20,12 @@
 }
 
 .tt-suggestion.tt-is-under-cursor {
-  color: @dropdownLinkColorHover;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, darken(@dropdownLinkBackgroundHover, 5%));
+  color: @dropdown-link-hover-color;
+  #gradient > .vertical(@dropdown-link-hover-bg, darken(@dropdown-link-hover-bg, 5%));
 }
 
 .tt-suggestion.tt-is-under-cursor a {
-  color: @dropdownBackground;
+  color: @dropdown-bg;
 }
 
 .tt-suggestion p {
