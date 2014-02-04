@@ -1,26 +1,19 @@
-.twitter-typeahead .tt-query,
-.twitter-typeahead .tt-hint {
-  margin-bottom: 0;
-}
-
 .tt-dropdown-menu {
   min-width: 160px;
   margin-top: 2px;
   padding: 5px 0;
   background-color: #fff;
   border: 1px solid #ccc;
-  border: 1px solid rgba(0,0,0,.2);
+  border: 1px solid rgba(0,0,0,.15);
   *border-right-width: 2px;
   *border-bottom-width: 2px;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+  border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
-     -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
           box-shadow: 0 5px 10px rgba(0,0,0,.2);
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
           background-clip: padding-box;
+  width: 100%;
 }
 
 .tt-suggestion {
@@ -30,14 +23,7 @@
 
 .tt-suggestion.tt-is-under-cursor {
   color: #fff;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+  background-color: #428bca;
 }
 
 .tt-suggestion.tt-is-under-cursor a {
@@ -46,4 +32,60 @@
 
 .tt-suggestion p {
   margin: 0;
+}
+
+.tt-hint {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.tt-hint:-moz-placeholder {
+  color: #999999;
+}
+
+.tt-hint::-moz-placeholder {
+  color: #999999;
+}
+
+.tt-hint:-ms-input-placeholder {
+  color: #999999;
+}
+
+.tt-hint::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.tt-hint:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.tt-hint[disabled],
+.tt-hint[readonly],
+fieldset[disabled] .tt-hint {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+
+textarea.tt-hint {
+  height: auto;
+}
+
+span.twitter-typeahead {
+  width: 100%;
 }
