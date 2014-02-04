@@ -26,6 +26,7 @@
 .tt-suggestion {
   display: block;
   padding: 3px 20px;
+  font-size: 14px;
 }
 
 .tt-suggestion.tt-is-under-cursor {
@@ -38,6 +39,10 @@
   background-image: linear-gradient(to bottom, #0088cc, #0077b3);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0)
+}
+
+.twitter-typeahead .tt-hint {
+    color: #999;
 }
 
 .tt-suggestion.tt-is-under-cursor a {
