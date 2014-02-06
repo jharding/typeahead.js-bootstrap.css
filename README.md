@@ -4,7 +4,7 @@ typeahead.js-bootstrap.css
  - Updated to follow [CSS class name changes][1] in typeahead v0.10.0
  - Applied [the overlay bug][2]
 
-Supports [typeahead v0.10.0] and [bootstrap v3.1.0]
+Supports [typeahead v0.10.0][3] and [bootstrap v3.1.0][4]
  
 
 [1]: https://github.com/twitter/typeahead.js/commit/6809173331aaa2bc198a69ba95f78f50e1fa6f34
